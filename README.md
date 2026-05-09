@@ -2,8 +2,9 @@
 
 Static website for BaseFlood Engineering, PLLC — hosted on Cloudflare Pages.
 
-**Live:** https://baseflood.com  
-**Pages URL:** https://baseflood-com.pages.dev
+**Live:** https://baseflood.com ✅  
+**Pages URL:** https://baseflood-com.pages.dev  
+**Status:** Production — auto-deploys on push to `main`
 
 ---
 
@@ -42,12 +43,7 @@ Static website for BaseFlood Engineering, PLLC — hosted on Cloudflare Pages.
 
 ### Automatic (GitHub Actions)
 Every push to `main` triggers a deploy via `.github/workflows/deploy.yml`.
-
-**One-time setup required:**  
-Add a `CLOUDFLARE_API_TOKEN` secret to this repo:
-1. Cloudflare dashboard → My Profile → API Tokens → Create Token
-2. Use the "Edit Cloudflare Workers" template (covers Pages)
-3. GitHub repo → Settings → Secrets → Actions → New secret → `CLOUDFLARE_API_TOKEN`
+`CLOUDFLARE_API_TOKEN` repo secret is set ✅ — no further setup needed.
 
 ### Manual
 ```bash
