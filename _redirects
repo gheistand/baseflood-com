@@ -1,0 +1,3 @@
+# Redirect old Pastor Dave pages to askpastordave.org
+# Catches pastordave.html, pastordave/, pastordave-anything, etc.
+/pastor*    https://askpastordave.org    301
