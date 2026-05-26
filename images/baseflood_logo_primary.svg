@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 64"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 259 64"
      role="img" aria-label="BaseFlood Engineering, PLLC">
   <title>BaseFlood Engineering, PLLC</title>
   <defs>
@@ -13,7 +13,7 @@
     <tspan fill="#1a3a5c">Base</tspan><tspan fill="#1e72b8">Flood</tspan>
   </text>
   <!-- Wave icon — 3 waves, dark→mid→light per spec -->
-  <g transform="translate(205, 8)">
+  <g transform="translate(199, 8)">
     <path d="M2 6 C 6 1, 10 1, 14 6 C 18 11, 22 11, 26 6 C 30 1, 34 1, 38 6 C 42 11, 46 11, 50 6"
           stroke="#1a3a5c" stroke-width="2.6" stroke-linecap="round" fill="none"/>
     <path transform="translate(0,13)"
