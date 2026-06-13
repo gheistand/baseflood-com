@@ -23,6 +23,9 @@
     <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="apple-touch-icon" href="apple_touch_icon_180.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta name="theme-color" content="#1a3a5c">
+    <link rel="canonical" href="https://baseflood.com/contact">
     
     <!-- Stylesheet -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -175,6 +178,8 @@
                         <h2>Send Us a Message</h2>
 
                         <form action="https://formspree.io/f/xqeqppwq" method="POST" class="contact-form" aria-label="Contact form">
+                            <!-- Honeypot anti-spam -->
+                            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
                             <div class="form-group">
                                 <label for="name">Name <span class="required">*</span></label>
                                 <input type="text" id="name" name="name" required aria-required="true" placeholder="Your name">
@@ -233,7 +238,7 @@
             <div class="footer-content">
                 <p><strong>BaseFlood Engineering, PLLC</strong></p>
                 <p>Copyright &copy; 2024-2026 BaseFlood Engineering, PLLC</p>
-                <p><a href="privacy.html">Privacy Policy & Terms of Service</a></p>
+                <p><a href="privacy.html">Privacy Policy &amp; Terms of Service</a></p>
             </div>
         </div>
     </footer>

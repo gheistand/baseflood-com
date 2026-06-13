@@ -29,15 +29,15 @@
     <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="apple-touch-icon" href="apple_touch_icon_180.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta name="theme-color" content="#1a3a5c">
+    <link rel="canonical" href="https://baseflood.com/">
 
     <!-- Stylesheet -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
-    <!-- ElevenLabs AI Agent Script -->
-    <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ5WE36THF"></script>
@@ -401,43 +401,10 @@
             <div class="footer-content">
                 <p><strong>BaseFlood Engineering, PLLC</strong></p>
                 <p>Copyright &copy; 2024-2026 BaseFlood Engineering, PLLC</p>
-                <p><a href="privacy.html">Privacy Policy & Terms of Service</a></p>
+                <p><a href="privacy.html">Privacy Policy &amp; Terms of Service</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- Cookie Consent (Simple Version) -->
-    <div id="cookie-consent" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" style="display: none;">
-        <div class="cookie-content">
-            <p>We use cookies to improve your experience on our site. By using our site, you consent to cookies.</p>
-            <div class="cookie-buttons">
-                <button onclick="acceptCookies()" class="btn-accept">Accept All</button>
-                <button onclick="rejectCookies()" class="btn-reject">Reject</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Simple Cookie Consent
-        function checkCookieConsent() {
-            if (!localStorage.getItem('cookieConsent')) {
-                document.getElementById('cookie-consent').style.display = 'block';
-            }
-        }
-
-        function acceptCookies() {
-            localStorage.setItem('cookieConsent', 'accepted');
-            document.getElementById('cookie-consent').style.display = 'none';
-            // Initialize Google Analytics here if needed
-        }
-
-        function rejectCookies() {
-            localStorage.setItem('cookieConsent', 'rejected');
-            document.getElementById('cookie-consent').style.display = 'none';
-        }
-
-        // Check on page load
-        window.addEventListener('load', checkCookieConsent);
-    </script>
 </body>
 </html>
