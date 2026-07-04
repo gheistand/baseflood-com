@@ -1,3 +1,39 @@
-# Redirect old Pastor Dave pages to askpastordave.org
-# Catches pastordave.html, pastordave/, pastordave-anything, etc.
-/pastor*    https://askpastordave.org    301
+# BaseFlood SEO Cleanup - Redirect Rules
+# Deploy: git push → auto-deployed to Cloudflare Pages
+# Test: curl -I https://baseflood.com/?ND (should get 301)
+
+# 1. www → non-www (highest priority)
+https://www.baseflood.com/* https://baseflood.com/:splat 301!
+
+# 2. Strip query parameters (all pages)
+https://baseflood.com/?* https://baseflood.com/ 301!
+https://baseflood.com/about?* https://baseflood.com/about 301!
+https://baseflood.com/contact?* https://baseflood.com/contact 301!
+https://baseflood.com/services?* https://baseflood.com/services 301!
+https://baseflood.com/training?* https://baseflood.com/training 301!
+https://baseflood.com/resources?* https://baseflood.com/resources 301!
+https://baseflood.com/faq?* https://baseflood.com/faq 301!
+https://baseflood.com/working-with-us?* https://baseflood.com/working-with-us 301!
+https://baseflood.com/privacy?* https://baseflood.com/privacy 301!
+
+# 3. Legacy WordPress paths → homepage
+/sample-page/ /index.html 301!
+/sample-page /index.html 301!
+/hello-world/ /index.html 301!
+/hello-world /index.html 301!
+/pastordave/ /index.html 301!
+/pastordave /index.html 301!
+/pastordave-text/ /index.html 301!
+/pastordave-text /index.html 301!
+
+# 4. WordPress system paths → homepage
+/wp-content/* /index.html 301!
+/wp-admin/* /index.html 301!
+/wp-login* /index.html 301!
+
+# 5. Legacy /cover-page/* restructured pages
+/cover-page/about/ /about 301!
+/cover-page/about /about 301!
+/cover-page/contact/ /contact 301!
+/cover-page/contact /contact 301!
+/cover-page/* /index.html 301!
