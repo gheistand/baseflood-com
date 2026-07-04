@@ -1,36 +1,22 @@
 # BaseFlood SEO Cleanup - Cloudflare Pages Redirect Rules
-# Format: source destination [status]
 
-# 1. www → non-www (highest priority)
-https://www.baseflood.com/* https://baseflood.com/:splat 301
+# Test rule first
+/test-redirect / 301
 
-# 2. Strip query parameters (all pages)
-/?* / 301
-/about?* /about 301
-/contact?* /contact 301
-/services?* /services 301
-/training?* /training 301
-/resources?* /resources 301
-/faq?* /faq 301
-/working-with-us?* /working-with-us 301
-/privacy?* /privacy 301
-
-# 3. Legacy WordPress paths → homepage
+# Legacy WordPress paths
 /sample-page/ / 301
 /sample-page / 301
 /hello-world/ / 301
 /hello-world / 301
 /pastordave/ / 301
 /pastordave / 301
-/pastordave-text/ / 301
-/pastordave-text / 301
 
-# 4. WordPress system paths → homepage
-/wp-content/* / 301
+# WordPress system paths
 /wp-admin/* / 301
 /wp-login* / 301
+/wp-content/* / 301
 
-# 5. Legacy /cover-page/* restructured pages
+# Legacy cover-page paths
 /cover-page/about/ /about 301
 /cover-page/about /about 301
 /cover-page/contact/ /contact 301
